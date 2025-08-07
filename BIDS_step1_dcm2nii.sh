@@ -17,8 +17,8 @@
 
 
 ###??? change these variables/arrays
-rawDir=/Users/hipwell/Duraccio_RAD_dicoms/dicoms			# location of raw data
-workDir=/Users/hipwell/Duraccio_RAD							# desired working directory
+rawDir=[path/to/dicom/directory]			# location of raw data
+workDir=[path/to/main/study/directory]		# desired working directory
 echo $workDir
 tempDir=${workDir}/code/Templates
 
