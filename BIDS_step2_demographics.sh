@@ -2,8 +2,8 @@
 
 
 
-rawDir=/Volumes/Yorick/Duraccio_RAD/rawdata
-dicomDir=/Users/bkirwan/Library/CloudStorage/Box-Box/Duraccio_RAD/dicoms
+rawDir=[path/to/BIDS/directory]
+dicomDir=[path/to/dicom/directory]
 session=gonogo
 
 
