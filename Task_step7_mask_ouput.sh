@@ -7,15 +7,19 @@
 
 #Variables to update every time:
 derDir=/Volumes/Yorick/Duraccio_RAD/derivatives
-outDir=${derDir}/grp-2025-08-27
+outDir=${derDir}/grp-2025-12-04
 deconv=gonogo_stats_blur8+tlrc
 
 # List of masks to loop over
 masks=(
-  MVM1_ME_DLMOd_p.01_k55_a.05_mask+tlrc
-  MVM1_ME_DURd_p.01_k55_a.05_mask+tlrc
-  MVM1_ME_SJLd_p.01_k55_a.05_mask+tlrc
   MVM1_ME_task_p.01_k55_a.05_mask+tlrc
+  MVM1_ME_CMId_mask+tlrc
+  MVM1_ME_dlmo_mask+tlrc
+  MVM1_Intx_dlmo_mask+tlrc
+  MVM1_ME_sjl_mask+tlrc
+  ME_sjld_mask+tlrc
+  ME_dura_mask+tlrc
+  ME_durad_mask+tlrc
 )
 
 #If you are following BIDS format, this should be constant
@@ -40,4 +44,6 @@ for mask in "${masks[@]}"; do
     # 3dROIstats -mask "$mask" -longnames "${i}/${deconv}" >> "${mask}.txt"
   done
 done
+
+
 

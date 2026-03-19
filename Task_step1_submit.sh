@@ -1,6 +1,5 @@
 #!/bin/bash
 
-## written for a cluster with slurm job management
 
 # stderr and stdout are written to ${outDir}/error_* and ${outDir}/output_* for troubleshooting.
 # job submission output are time stamped for troubleshooting
